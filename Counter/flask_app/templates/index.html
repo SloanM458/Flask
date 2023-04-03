@@ -17,14 +17,15 @@
     <div  class="container text-center">
         <h1>Counter</h1>
         <p>{{session["clicking"]}} time(s)</p>
+        <!-- session is using the key value pairs -->
 
         <div class="d-flex justify-content-center d-flex p-2 text-center p-3" >
             <a href="/">
                 <button class="p-3 mb-2 border bg-danger text-white rounded">Click</button> </a>
             <a href="/destroy_session">
+                <!-- need to remember to use button with a tag inside of it.  -->
                 <button class="p-3 mb-2 border bg-danger text-white rounded">Reset</button> </a>
         </div>
     </div>
 </body>
-
 </html>
