@@ -11,7 +11,10 @@
     <div class="container p-3 mb-2 bg-dark text-white text-center w-25">
     <h1 class="text-warning">Submitted Info</h1>
 
-        <div>
+
+    <!-- Not sure why but my {{session}} functions aren't working -->
+    <!-- I've tried a few things and from my pov it looks fine so im not sure -->
+        <div>  
             <p>Name: <br>
                 {{session["form_data"].client_name}}
             </p>
@@ -26,12 +29,6 @@
         <div>
             <p>Favorite Language: <br>
                 {{session["form_data"].favorite_language}}
-            </p>
-        </div>
-
-        <div>
-            <p>Dojo Location <br>
-                {{session["form_data"].client_name}}
             </p>
         </div>
 
