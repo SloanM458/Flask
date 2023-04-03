@@ -1,0 +1,67 @@
+<!-- TO WHOEVER IS GRADING: MICHAEL VOTH HELPED ME WITH SOME PARTS OF THIS ASSIGNMENT. THERE MAY BE CODE SIMILARITIES -->
+<!-- I WASN'T ABLE TO FINISH AND MAKE IT WORK PROPERLY, I HAVE A GOOGLE DOC OF QUESTIONS AND NOTES ON WHAT I NEED TO WORK ON. THANK YOU! :) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container p-3 mb-2 bg-dark text-white text-center w-25">
+        <h1 class="text-warning">Dojo Survey</h1>
+        <form method="POST" action="/">
+            <label for="client_name">Name:</label><br>
+            <input type="text" placeholder="Name" name="client_name" id="name">
+        </form>
+
+        <div>
+            <label for="location">Dojo Location: </label><br>
+            <select name="location" id="location">
+                <option value="Select">-- Select A Location --</option>
+                <option value="Chicago">Chicago</option>
+                <option value="Seattle">Seattle</option>
+                <option value="Online">Online</option>
+                <option value="Burbank">Burbank</option>
+                <option value="Bellevue">Bellevue</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="favorite_language">Favorite Language:</label><br>
+            <select name="favorite_language" id="">
+                <option value="Select">-- Select A Language --</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="C#">C#</option>
+            </select>
+        </div>
+
+        <div>
+            <form action="/" method="POST">
+                <label for="comments">Comments (Optional):</label><br>
+                <textarea name="comments" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Enter" name="comments" id="comments">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
